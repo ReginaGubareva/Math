@@ -1,13 +1,16 @@
-name: Deploy Math
+name: CI
 on:
   push:
-    branches: master
-    jobs:
-      build:
-        runs-on: ubuntu-latest
-        steps:
-          name: Check the launching in Development branch
-          uses: actions/checkout@v3
-          run: echo "The workflow is launched after push in development branch"
+    branches: [ "main" ]
+
+jobs:
+  my_build_job:
+    runs-on: ubuntu-latest
+    steps:
+      uses: actions/checkout@v3
+      name: Run a one-line script
+      run: echo Hello, world!
+
+
 
 
