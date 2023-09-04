@@ -3,7 +3,7 @@ on:
   push:
     branches: master
     jobs:
-      check-branch:
+      build:
         runs-on: ubuntu-latest
         steps:
           name: Check the launching in Development branch
