@@ -3,7 +3,6 @@ name: My CI Workflow
 on:
   push:
     branches:
-      - master
       - development
 
 jobs:
@@ -13,7 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       - name: Run a one-line script
-        run: echo Hello development branch!
+        run: echo Hello
 
 
 
