@@ -3,7 +3,7 @@ name: My CI Workflow
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   my_build_job:
